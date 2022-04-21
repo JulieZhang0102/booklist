@@ -36,6 +36,7 @@ function App() {
       isbn: "9781984878106",
       imageURL:
         "http://books.google.com/books/content?id=UhkSEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      comments: ["A lovely book"],
     },
     {
       title: "Don't Make Me Think",
