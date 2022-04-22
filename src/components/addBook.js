@@ -90,7 +90,7 @@ export default function AddBook(props) {
                   : "not available"
               }
               imageUrl={
-                ["thumbnail"] in book["volumeInfo"]["imageLinks"]
+                ["imageLinks"] in book["volumeInfo"]
                   ? book["volumeInfo"]["imageLinks"]["thumbnail"]
                   : ""
               }
