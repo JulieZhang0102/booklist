@@ -2,7 +2,7 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import { ThemeProvider } from "@mui/material/styles";
-import theme from "./colorTheme";
+import Theme from "./colorTheme";
 import { Grid } from "@mui/material";
 import TextareaAutosize from "@mui/material/TextareaAutosize";
 import CloseIcon from "@mui/icons-material/Close";
@@ -31,8 +31,6 @@ export default function BookComments(props) {
     bookComments,
     setBooks,
   } = props;
-
-  //   const [newComment, setNewComment] = useState("");
 
   const displayComments = () => {
     const commentsList = [];
@@ -70,12 +68,8 @@ export default function BookComments(props) {
   };
 
   return (
-    <ThemeProvider theme={theme}>
-      <Modal
-        open={openComments}
-        aria-labelledby="modal-modal-title"
-        aria-describedby="modal-modal-description"
-      >
+    <ThemeProvider theme={Theme}>
+      <Modal open={openComments}>
         <Grid container sx={style}>
           <Grid item xs={12} pb={3} sx={{ borderBottom: "2px solid #000" }}>
             <Grid container alignItems="center">

@@ -7,7 +7,7 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import IconButton from "@mui/material/IconButton";
-import theme from "./components/colorTheme";
+import Theme from "./components/colorTheme";
 import { ThemeProvider } from "@mui/material/styles";
 import { useState, useEffect } from "react";
 import { Grid } from "@mui/material";
@@ -91,7 +91,7 @@ function App() {
 
   return (
     <main>
-      <ThemeProvider theme={theme}>
+      <ThemeProvider theme={Theme}>
         <Box sx={{ flexGrow: 1 }}>
           <AppBar position="static" color="purple">
             <Toolbar>
@@ -99,7 +99,6 @@ function App() {
                 size="large"
                 edge="start"
                 color="inherit"
-                aria-label="menu"
                 sx={{ mr: 2 }}
               >
                 <img src={logo} alt="App logo" width="50"></img>

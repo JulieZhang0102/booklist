@@ -4,7 +4,7 @@ import CardContent from "@mui/material/CardContent";
 import CardActions from "@mui/material/CardActions";
 import Typography from "@mui/material/Typography";
 import { ThemeProvider } from "@mui/material/styles";
-import theme from "./colorTheme";
+import Theme from "./colorTheme";
 import Tooltip from "@mui/material/Tooltip";
 import Button from "@mui/material/Button";
 import BookComments from "./bookComments";
@@ -21,7 +21,7 @@ export default function Book(props) {
   };
 
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={Theme}>
       <Card sx={{ minheight: 400, width: 250 }}>
         <CardMedia
           component="img"

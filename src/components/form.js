@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Drawer from "@mui/material/Drawer";
 import Button from "@mui/material/Button";
-import theme from "./colorTheme";
+import Theme from "./colorTheme";
 import { ThemeProvider } from "@mui/material/styles";
 import AddBook from "./addBook";
 
@@ -11,7 +11,7 @@ export default function Form(props) {
 
   return (
     <div>
-      <ThemeProvider theme={theme}>
+      <ThemeProvider theme={Theme}>
         <Button
           onClick={() => setDisplay(true)}
           variant="outlined"
